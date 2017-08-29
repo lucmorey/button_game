@@ -5,29 +5,33 @@ var redButton = document.querySelector('#red')
 var greenButton = document.querySelector('#green')
 var blueButton = document.querySelector('#blue')
 var currentColor = ""
+
 function randomInt (n) {
     return Math.floor(Math.random()*n)
 }
+
 var arrayOfColors = ['red','green','blue']
 
 function colorSelector() {
-var randomNum = randomInt(arrayOfColors.length)
-console.log(randomNum)
-var chosenColor = arrayOfColors[randomNum]
-document.body.style.backgroundColor=chosenColor
-currentColor = chosenColor
+    var randomNum = randomInt(arrayOfColors.length)
+    var chosenColor = arrayOfColors[randomNum]
+    document.body.style.backgroundColor=chosenColor
+    currentColor = chosenColor
 }
 
 
 playButton.onclick = function() {
-colorSelector()    
-}
+    colorSelector()    
+    }
 redButton.onclick = function() {
-    console.log("red"),(document.body.style.backgroundColor= 'red') }
+    console.log("red"),(document.body.style.backgroundColor= 'red')
+    }
 greenButton.onclick = function() {
-    console.log("green"),(document.body.style.backgroundColor= 'green')   }
+    console.log("green"),(document.body.style.backgroundColor= 'green')  
+    }
 blueButton.onclick = function() {
-    console.log ("blue"),(document.body.style.backgroundColor= 'blue') }
+    console.log ("blue"),(document.body.style.backgroundColor= 'blue') 
+    }
 
 // currentScore = function() {
 //     if (redButton.onclick && currentColor === 'red'){
